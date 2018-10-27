@@ -13,7 +13,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    @recipe = Recipe.create(params[recipe_params])
+    recipe = Recipe.create(params[recipe_params])
     binding.pry
     redirect_to recipe
   end
